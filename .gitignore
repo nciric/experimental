@@ -59,3 +59,28 @@ _deps
 
 # Rust
 Cargo.lock
+
+# Windows (VS and the rest)
+.vscode/settings.json
+ffi/CMakeSettings.json
+ffi/.vs/CMake Overview
+ffi/.vs/cmake.db
+ffi/.vs/ProjectSettings.json
+ffi/.vs/slnx.sqlite
+ffi/.vs/VSWorkspaceState.json
+ffi/.vs/ffi/v16/.suo
+ffi/.vs/ffi/v16/Browse.VC.db
+ffi/out/build/x64-Debug/.ninja_deps
+ffi/out/build/x64-Debug/.ninja_log
+ffi/out/build/x64-Debug/build.ninja
+ffi/out/build/x64-Debug/rules.ninja
+ffi/out/build/x64-Debug/VSInheritEnvironments.txt
+ffi/out/build/x64-Debug/.cmake/api/v1/query/client-MicrosoftVS/query.json
+ffi/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-bc545a294f0dded8087f.json
+ffi/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-cdf04f55d03b16acef67.json
+ffi/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-9e64d2da6cf4281a009b.json
+ffi/out/build/x64-Debug/.cmake/api/v1/reply/index-2020-04-18T21-32-10-0402.json
+ffi/out/build/x64-Debug/.cmake/api/v1/reply/target-printer-Debug-e21cefaac9d9607c9d3b.json
+ffi/out/build/x64-Debug/.cmake/api/v1/reply/target-struct_printer-Debug-693f71b2eef83abae8c3.json
+ffi/.vs/ffi/v16/ipch/AutoPCH/653fd6ac0f2d1940/MAIN.ipch
+ffi/struct_printer/Cargo.lock
