@@ -39,3 +39,23 @@ ffi/struct_printer/gen/*.h
 
 # Ignore all targets in ffi
 ffi/struct_printer/target/
+
+# Ignore everything in build/
+ffi/build
+
+# CMake ignores
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+CMake
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Rust
+Cargo.lock

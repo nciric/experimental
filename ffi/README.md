@@ -8,13 +8,11 @@
 To compile/build/run:
 
 ```
-$cd struct_printer
-$cargo build --release
-$sudo cp target/release/libstruct_printer.so /usr/lib
-$ldconfig -n -v /usr/lib
-$cd ..
-$clang++ -O2 -Wall -o printer -Istruct_printer/gen -Lstruct_printer/target/release main.cc -lstruct_printer
-$./printer
+$cd ffi
+$mkdir build (once)
+$cmake -DCMAKE_BUILD_TYPE=Release|Debug
+$make
+$build/printer
 ```
 
 Result should be:
@@ -23,4 +21,11 @@ Result should be:
 Logical     : false
 Short number: 4
 Long number : 1048576
+```
+
+Right now, installation is not automatic:
+
+```
+$sudo cp target/release/libstruct_printer.so /usr/lib
+$ldconfig -n -v /usr/lib
 ```
