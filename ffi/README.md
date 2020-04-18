@@ -30,4 +30,8 @@ Right now, installation is not automatic (you may need to call):
 ```
 $sudo cp target/release/libstruct_printer.so /usr/lib
 $ldconfig -n -v /usr/lib
+
+or
+
+LD_LIBRARY_PATH=struct_printer/target/debug/ build/struct_printer
 ```
