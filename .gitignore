@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Ignore all VS Code spaces.
+*.code-workspace
+
+# Ignore generated headers in ffi
+ffi/struct_printer/gen/*.h
+
+# Ignore all targets in ffi
+ffi/struct_printer/target/

@@ -1,0 +1,13 @@
+[package]
+name = "struct_printer"
+version = "0.1.0"
+authors = ["nciric"]
+edition = "2018"
+# For cbindgen generated headers.
+build = "build.rs"
+
+[lib]
+crate-type = ["cdylib"]
+
+[build-dependencies]
+cbindgen = "^0.6.0"
