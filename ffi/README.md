@@ -3,7 +3,6 @@
 1. Using cbindgen library to auto-generate C++ header files from Rust code
 2. Making cdylib instead of staticlib to avoid problems with clib differences
 3. Not dealing with strings yet, just PODs
-4. Not having cmake yet
 
 To compile/build/run:
 
