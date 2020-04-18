@@ -9,7 +9,7 @@ To compile/build/run:
 ```
 $cd ffi
 $mkdir build (once)
-$cmake -DCMAKE_BUILD_TYPE=Release|Debug
+$cmake -DCMAKE_BUILD_TYPE=Release|Debug .
 $make
 $build/printer
 ```
@@ -17,12 +17,15 @@ $build/printer
 Result should be:
 
 ```
+From Rust, content of struct is:
+Text        : Nebojsa Ciric
 Logical     : false
 Short number: 4
 Long number : 1048576
+From C++, count elements: 4
 ```
 
-Right now, installation is not automatic:
+Right now, installation is not automatic (you may need to call):
 
 ```
 $sudo cp target/release/libstruct_printer.so /usr/lib
