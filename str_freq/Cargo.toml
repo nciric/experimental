@@ -1,0 +1,15 @@
+[package]
+name = "str_freq"
+version = "0.1.0"
+authors = ["nciric"]
+edition = "2018"
+
+[dependencies]
+scoped_threadpool="0.1.6"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "str_freq_benchmark"
+harness = false

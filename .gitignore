@@ -41,7 +41,8 @@ ffi/struct_printer/gen/*.h
 ffi/struct_printer/target/
 
 # Ignore everything in build/
-ffi/build
+*/build
+*/target
 
 # CMake ignores
 CMakeLists.txt.user
