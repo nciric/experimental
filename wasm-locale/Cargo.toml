@@ -10,7 +10,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2"
-icu-locale = { git = "https://github.com/unicode-org/icu4x" }
+icu_locid = "0.1.0"
 
 [profile.release]
 panic = "abort"

@@ -1,5 +1,5 @@
 use wasm_bindgen::prelude::*;
-use icu_locale::Locale;
+use icu_locid::Locale;
 
 #[wasm_bindgen]
 extern {
