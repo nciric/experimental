@@ -65,7 +65,7 @@ def get_aqi(reading, c_low, c_high, i_low, i_high):
     return (i_high - i_low) * (reading - c_low) / (c_high - c_low) + i_low
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-p', '--port', help = 'Port to listen to. Use one of COMx on Windows.', default = '/dev/ttyUSB0')
+parser.add_argument('-p', '--port', help = 'Port to listen to. Use /dev/ttyUSB0 on Linux.', default = 'COM3')
 args = parser.parse_args()
 sensor = serial.Serial(args.port, 9600)
 if not sensor.isOpen():
