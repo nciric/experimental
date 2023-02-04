@@ -2,12 +2,15 @@
 '''
 from statistics import mean
 
+import argparse
 import time
 try:
     import serial
 except ImportError:
     print('Python serial library required, on Ubuntu/Debian:')
     print('    apt-get install python3-serial')
+    print('on Windows:')
+    print('    pip install pyserial')
     raise
 
 def read_nova_dust_sensor(sensor):
@@ -61,7 +64,10 @@ def get_aqi(reading, c_low, c_high, i_low, i_high):
     '''Formula from https://en.wikipedia.org/wiki/Air_quality_index#Indices_by_location, US region.'''
     return (i_high - i_low) * (reading - c_low) / (c_high - c_low) + i_low
 
-sensor = serial.Serial('/dev/ttyUSB0', 9600)
+parser = argparse.ArgumentParser()
+parser.add_argument('-p', '--port', help = 'Port to listen to. Use one of COMx on Windows.', default = '/dev/ttyUSB0')
+args = parser.parse_args()
+sensor = serial.Serial(args.port, 9600)
 if not sensor.isOpen():
     sensor.open()
 
